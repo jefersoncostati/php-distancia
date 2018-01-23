@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Formulário HTML</div><br><br>
+        <form action="contato.php" method="post">
+            <label for="nome">Nome: </label><input type="text" name="nome" id="nome"/><br><br>
+            <label for="email">Email: </label><input type="email" name="email" id="email"/><br><br>
+            <label>Senha: </label><input type="password" name="senha" id="senha"/><br><br>
+            <label for="opcao1">Opção 1 </label><input type="checkbox" name="check" value="um" id="opcao1"/><br><br>
+            <label for="opcao2">Opção 2 </label><input type="checkbox" name="check" value="dois" id="opcao2"/><br><br>
+            <label for="radio1">radio 1</label><input type="radio" name="radio" value="um" id="radio1"/><br><br>
+            <label for="radio2">radio 2</label><input type="radio" name="radio" value="dois" id="radio2"/><br><br>
+            <label for="l"></label><input type="hidden" name="l" id="l"/><br><br>
+            Estado: <select name="estado" id="estado">
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>    
+                <option value="mg">Minas Gerais</option>
+                <option value="es">Espirito Santo</option>
+            </select><br><br>
+            Mensagem<br>
+            <textarea name="mensagem" cols="40" rows="10" id="area"></textarea><br><br>
+            <label for="enviar"></label><input type="submit" name="enviar" id="enviar"/>
+        </form>
+    </body>
+</html>
